@@ -343,6 +343,53 @@ results = best_model.track(
     tracker="bytetrack.yaml"
 )
 
+### ⚙️ Tracking Configuration
+
+The trained YOLO26 Nano model was used with the **ByteTrack** tracking algorithm to track detected objects across consecutive video frames.
+
+| Parameter | Value |
+|---|---|
+| Model | `YOLO26 Nano` |
+| Task | `Detection + Tracking` |
+| Input | Football Video |
+| Tracker | `ByteTrack` |
+| Output | Annotated Video |
+| Save Results | `True` |
+| Display Results | `True` |
+
+### 🎯 Tracking Pipeline
+
+The video tracking pipeline consists of the following steps:
+
+Input Video  
+↓  
+Video Frames  
+↓  
+YOLO26 Nano Detection  
+↓  
+Object Bounding Boxes  
+↓  
+ByteTrack Association  
+↓  
+Object IDs Across Frames  
+↓  
+Tracked Output Video
+
+## 📊 Inference Performance
+
+The trained YOLO26 Nano model was evaluated during football video inference and tracking.
+
+The system achieved an average processing speed of approximately **28 FPS**, enabling real-time video detection and tracking.
+
+| Metric | Value |
+|---|---:|
+| Model | `YOLO26 Nano` |
+| Tracker | `ByteTrack` |
+| Input | Football Video |
+| Detection Classes | **2** |
+| Inference Speed | **28 FPS** |
+| Task | Real-Time Detection & Tracking |
+
 ---
 
 # 📁 Project Structure
