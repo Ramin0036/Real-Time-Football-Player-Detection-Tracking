@@ -2,10 +2,7 @@
 
 A computer vision project for **football player and football detection** using the **YOLO26 Nano** object detection model.
 
-> 🚧 **Project Status:** In Progress
->
-> Replace this line with the current project status, for example:
-> `Completed` / `In Progress` / `Experimental`
+> 🚧 **Project Status:** `In Progress`
 
 ---
 
@@ -54,8 +51,6 @@ The project uses the **YOLO26 Nano (`yolo26n.pt`)** model as the base architectu
 | Workers     | `0`                                                                           |
 | Device      | `TODO: optionally describe as CUDA/GPU without mentioning specific hardware`  |
 | Ultralytics | `8.4.114`                                                                     |
-
-> 📝 **TODO:** If you changed any training parameter manually, add it to this table.
 
 ---
 
