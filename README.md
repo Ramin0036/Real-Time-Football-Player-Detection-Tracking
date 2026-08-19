@@ -282,6 +282,29 @@ Output Frame
 ↓  
 Output Video
 
+## 📹 Detection Output
+
+The trained model was applied to football video footage to detect players and the football in each frame.
+
+The output video contains bounding boxes around the detected objects, along with their predicted class labels and confidence scores.
+
+### 🎯 Detected Objects
+
+| Class | Description |
+|---|---|
+| 🧍 `player` | Detected football players |
+| ⚽ `football` | Detected football |
+
+### 📊 Detection Performance
+
+| Metric | Value |
+|---|---:|
+| Model | YOLO26 Nano |
+| Input | Football Video |
+| Output | Annotated Video |
+| Inference Speed | **28 FPS** |
+| Detection Classes | **2** |
+
 ---
 
 # 🚀 Inference
