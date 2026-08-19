@@ -249,61 +249,38 @@ The model performs significantly better at detecting **players** than the footba
 
 ---
 
-# 🖼️ Detection Results
+# 🎥 Detection Results
 
-> 📝 **TODO: Add prediction examples here.**
+The trained **YOLO26 Nano** model was used for real-time object detection on football videos.
 
-Place your output images inside a folder such as:
+The model processes video frames sequentially and detects two object classes:
 
-```text
-results/
-├── detection_01.jpg
-├── detection_02.jpg
-├── detection_03.jpg
-└── detection_04.jpg
-```
+- 🧍 `player`
+- ⚽ `football`
 
-Then add them to the README:
+For each detected object, the model generates a bounding box, predicted class, and confidence score.
 
-```markdown
-## 🔎 Detection Examples
+## ⚡ Real-Time Detection
 
-![Detection Example 1](results/detection_01.jpg)
+The model achieved an inference speed of approximately **28 FPS** during video detection.
 
-![Detection Example 2](results/detection_02.jpg)
+This allows the trained model to perform real-time football object detection on video streams.
 
-![Detection Example 3](results/detection_03.jpg)
-```
+### 🎬 Detection Pipeline
 
-> ⭐ **Recommended:** Add 3–6 good examples showing both successful player and football detections.
-
----
-
-# 🎥 Video Detection
-
-> 📝 **TODO: Complete this section only if you performed detection on videos.**
-
-Describe:
-
-* Input video format
-* Output video format
-* Whether inference is frame-by-frame
-* Whether tracking is used
-* Approximate FPS if measured
-
-Example:
-
-```text
-Input Video
-     ↓
-YOLO26 Nano
-     ↓
-Object Detection
-     ↓
-Bounding Boxes
-     ↓
+Input Video  
+↓  
+Video Frame  
+↓  
+YOLO26 Nano  
+↓  
+Object Detection  
+↓  
+Bounding Boxes + Confidence  
+↓  
+Output Frame  
+↓  
 Output Video
-```
 
 ---
 
