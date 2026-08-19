@@ -444,21 +444,133 @@ cd Football-Player-Detection-YOLOv8
 
 ## 2. Install Dependencies
 
-```bash
-pip install -r requirements.txt
-```
+Install the required Python package for running the YOLO26 Nano model:
+
+    pip install ultralytics
+
+The project was developed and tested with the following environment:
+
+| Dependency | Version |
+|---|---|
+| Python | `3.13.9` |
+| Ultralytics | `8.4.114` |
+| PyTorch | `2.13.0+cu130` |
+| CUDA | `13.0` |
 
 ## 3. Run Inference
 
-```bash
-TODO
-```
+The trained **YOLO26 Nano** model can be used to perform real-time object detection and tracking on football videos.
+
+### Load the Trained Model
+
+Use the trained model weights:
+
+    from ultralytics import YOLO
+
+    best_model = YOLO("path/to/best.pt")
+
+Replace `path/to/best.pt` with the path to your trained model weights.
+
+### Run Video Detection and Tracking
+
+Run the model on a football video using the **ByteTrack** tracker:
+
+    results = best_model.track(
+        source="path/to/video.mp4",
+        save=True,
+        show=True,
+        tracker="bytetrack.yaml"
+    )
+
+### Inference Parameters
+
+| Parameter | Value | Description |
+|---|---|---|
+| `source` | `video.mp4` | Input football video |
+| `save` | `True` | Save the processed output video |
+| `show` | `True` | Display inference results |
+| `tracker` | `bytetrack.yaml` | ByteTrack tracking algorithm |
+
+### Detection & Tracking
+
+The inference pipeline detects and tracks two object classes:
+
+| Class | Description |
+|---|---|
+| `player` | Football players |
+| `football` | Football |
+
+The model processes video frames sequentially and uses **ByteTrack** to associate detected objects across consecutive frames.
+
+### Performance
+
+The inference pipeline achieved approximately **28 FPS**, enabling real-time football player and football detection and tracking.
+
+### Output
+
+The processed video is automatically saved by Ultralytics when `save=True` is enabled.
+
+The output video contains:
+
+- 🧍 Player bounding boxes
+- ⚽ Football bounding boxes
+- 🆔 Tracking information
+- 🎯 Detection confidence scores
+- ⚡ Real-time processing at approximately **28 FPS**
 
 ## 4. Train the Model
 
-```bash
-TODO
-```
+The YOLO26 Nano model was fine-tuned on the **Football Player Detection** dataset for object detection.
+
+### Training Configuration
+
+The model was trained using the following configuration:
+
+| Parameter | Value |
+|---|---|
+| Model | `YOLO26 Nano` |
+| Task | Object Detection |
+| Epochs | `10` |
+| Image Size | `320 × 320` |
+| Batch Size | `128` |
+| Workers | `0` |
+| Device | `CUDA GPU` |
+| Pretrained | `Yes` |
+
+### Training Code
+
+The model can be trained using the following code:
+
+    from ultralytics import YOLO
+
+    model = YOLO("yolo26n.pt")
+
+    results = model.train(
+        data="path/to/data.yaml",
+        epochs=10,
+        imgsz=320,
+        batch=128,
+        workers=0,
+        device=0
+    )
+
+Replace `path/to/data.yaml` with the path to the dataset configuration file.
+
+### Training Output
+
+Ultralytics automatically saves the training results, including:
+
+- 📊 Training and validation metrics
+- 📈 Performance plots
+- 💾 Model checkpoints
+- ⭐ Best model weights
+- 📝 Training logs
+
+The best-performing model is saved as:
+
+    best.pt
+
+This trained model is then used for video detection and tracking with **ByteTrack**.
 
 ---
 
