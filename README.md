@@ -2,7 +2,7 @@
 
 A computer vision project for **football player and football detection** using the **YOLO26 Nano** object detection model.
 
-> 🚧 **Project Status:** `TODO — Complete this section`
+> 🚧 **Project Status:** In Progress
 >
 > Replace this line with the current project status, for example:
 > `Completed` / `In Progress` / `Experimental`
