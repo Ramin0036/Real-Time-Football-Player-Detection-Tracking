@@ -58,29 +58,32 @@ The project uses the **YOLO26 Nano (`yolo26n.pt`)** model as the base architectu
 
 ## Dataset Description
 
-> 📝 **TODO: Describe the dataset here.**
+The dataset used in this project is the **Football Player Detection YOLOv8** dataset, obtained from Kaggle.
 
-Include:
+The dataset contains football-related images annotated for object detection. The annotations follow the **YOLO format** and include two object classes: `player` and `football`.
 
-* Dataset source: `TODO`
-* Dataset type: `TODO`
-* Total number of images: `TODO`
-* Number of classes: `2`
-* Classes: `player`, `football`
-* Annotation format: `YOLO`
-* Image resolution: `TODO`
+### 🎯 Dataset Information
 
-### Dataset Source
+| Property                  | Value                            |
+| ------------------------- | -------------------------------- |
+| Dataset                   | Football Player Detection YOLOv8 |
+| Source                    | Kaggle                           |
+| Task                      | Object Detection                 |
+| Classes                   | `player`, `football`             |
+| Annotation Format         | YOLO                             |
+| Original Image Resolution | `1280 × 12808`                    |
+| Dataset Type              | Football / Sports Images         |
 
-> 📝 **TODO:** Add the dataset source/link here if publicly available.
+### 🔗 Dataset Source
 
-`TODO — Dataset URL`
+The original dataset is available on Kaggle:
+
+[Football Player Detection YOLOv8](https://www.kaggle.com/datasets/iasadpanwhar/football-player-detection-yolov8)
 
 ---
 
 ## 📁 Dataset Structure
 
-```text
 dataset/
 │
 ├── train/
@@ -96,21 +99,70 @@ dataset/
 │   └── labels/
 │
 └── data.yaml
-```
-
-> 📝 **TODO:** Replace this structure with the actual dataset structure if it is different.
 
 ---
 
 ## 📈 Dataset Statistics
 
-> 📝 **TODO:** Complete the table using the actual dataset statistics.
+The dataset was divided into training, validation, and test subsets.
 
-| Split      |  Images | Instances |
-| ---------- | ------: | --------: |
-| Train      |  `TODO` |    `TODO` |
-| Validation |  `TODO` |    `TODO` |
-| Test       | **520** | **2,903** |
+| Split      |     Images |  Instances |
+| ---------- | ---------: | ---------: |
+| Train      | **10,308** | **48,810** |
+| Validation |    **972** |  **2,903** |
+| Test       |    **520** |  **2,903** |
+| **Total**  | **11,800** | **54,616** |
+
+---
+
+## 🎯 Classes
+
+| Class      | Description            |
+| ---------- | ---------------------- |
+| `player`   | Football players       |
+| `football` | Football / soccer ball |
+
+The dataset contains significantly more `player` annotations than `football` annotations. This class imbalance is one of the factors that can make football detection more challenging.
+
+---
+
+## 🏷️ Annotation Format
+
+The dataset uses the **YOLO annotation format**.
+
+Each image has a corresponding `.txt` annotation file containing the object class and normalized bounding-box coordinates.
+
+The annotation format follows:
+
+`class_id x_center y_center width height`
+
+For example:
+
+`1 0.512 0.431 0.125 0.245`
+
+Where:
+
+* `class_id` → Object class identifier
+* `x_center` → Normalized bounding-box center X
+* `y_center` → Normalized bounding-box center Y
+* `width` → Normalized bounding-box width
+* `height` → Normalized bounding-box height
+
+All bounding-box coordinates are normalized to the range `[0, 1]`.
+
+---
+
+## 🖼️ Image Resolution
+
+The original images have a resolution of:
+
+**1280 × 1280**
+
+During model training, the images were resized to:
+
+**320 × 320**
+
+using the `imgsz=320` training configuration.
 
 ---
 
