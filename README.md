@@ -315,7 +315,9 @@ The model processes the video at approximately **28 FPS** and generates bounding
 
 > 📌 The following video demonstrates the real-time detection performance of the trained YOLO26 Nano model.
 
-**Output Video:** `TODO`
+**Output Video:** 
+
+<img width="692" height="388" alt="video2 - Copy_02" src="https://github.com/user-attachments/assets/cec7a4c2-91d3-406e-b9a2-74b6765e0d86" />
 
 ---
 
