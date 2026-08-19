@@ -1,4 +1,4 @@
-# ⚽ Football Player Detection with YOLO26 Nano
+# ⚽ Real-Time Football Player Detection with YOLO26 Nano
 
 A computer vision project for **football player and football detection** using the **YOLO26 Nano** object detection model.
 
@@ -204,27 +204,14 @@ result = model.train(
 
 # 📉 Training Results
 
-> 📝 **TODO: Add your training result image here.**
 
-Recommended file:
-
-```text
-results.png
-```
-
-Example:
-
-```markdown
-![Training Results](results.png)
-```
 
 ### 📊 Training Curves
 
-> 📝 **TODO:** Add the training curves/results image.
+<img width="2250" height="1500" alt="BoxF1_curve" src="https://github.com/user-attachments/assets/f3875907-1eec-4df3-a73e-a378970f395d" /><img width="2250" height="1500" alt="BoxR_curve" src="https://github.com/user-attachments/assets/29eae288-e26f-415e-9755-303c4808d666" />
+<img width="2250" height="1500" alt="BoxPR_curve" src="https://github.com/user-attachments/assets/702ebd8d-3768-49a8-8e7a-6b1d5a0ce835" />
+<img width="2250" height="1500" alt="BoxP_curve" src="https://github.com/user-attachments/assets/d4e5a368-3896-4ef5-8423-58021c394f91" />
 
-```markdown
-![Training Curves](path/to/results.png)
-```
 
 ---
 
@@ -256,19 +243,6 @@ The trained model was evaluated on the **test split** containing:
 ### 🧠 Results Analysis
 
 The model performs significantly better at detecting **players** than the football itself.
-
-> 📝 **TODO:** Add your own explanation here.
-
-Possible points to discuss:
-
-* Why player detection performs better
-* Why football detection is more difficult
-* Small object detection
-* Occlusion
-* Motion blur
-* Different camera angles
-* Similarity between football and background
-* Dataset imbalance
 
 ---
 
@@ -360,8 +334,6 @@ python predict.py
 
 # 📁 Project Structure
 
-> 📝 **TODO: Replace this with your actual project structure.**
-
 ```text
 football_players_detection/
 │
@@ -380,16 +352,10 @@ football_players_detection/
 │   └── best.pt
 │
 ├── notebooks/
-│   └── TODO
+│   └── Footbal-Players-Detection-Yolo26n.ipynb
 │
-├── src/
-│   └── TODO
-│
-├── requirements.txt
 └── README.md
 ```
-
-> ⚠️ **TODO:** Keep only the folders that actually exist in your project structure — remove anything that doesn't.
 
 ---
 
@@ -397,24 +363,13 @@ football_players_detection/
 
 ## Requirements
 
-> 📝 **TODO:** Add your actual Python and package requirements.
-
 Recommended format:
 
 ```text
-Python >= TODO
-Ultralytics == TODO
-PyTorch == TODO
-OpenCV == TODO
+Python >= 3.13.9
+Ultralytics == 8.4.114
+PyTorch == 2.13.0+cu130
 ```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-> 📝 **TODO:** If you don't have a `requirements.txt`, list the packages you installed so this section can be completed.
 
 ---
 
@@ -451,26 +406,10 @@ TODO
 
 # 📦 Model Weights
 
-> 📝 **TODO:** Specify whether the model weights are included in the GitHub repository or not.
-
-Possible options:
-
-### Option 1 — Local Weights
-
 ```text
 weights/
 └── best.pt
 ```
-
-### Option 2 — Download
-
-```markdown
-Download the trained weights from:
-
-TODO — Link
-```
-
-> ⚠️ If you are not including the weights file in GitHub, explain here how to obtain it.
 
 ---
 
@@ -481,8 +420,6 @@ TODO — Link
 * 🧠 Ultralytics
 * 🎯 YOLO26 Nano
 * 👁️ Computer Vision
-* 📦 OpenCV — **TODO: confirm**
-* 📊 NumPy — **TODO: confirm**
 
 ---
 
@@ -508,31 +445,11 @@ Mean Average Precision averaged over IoU thresholds from 0.50 to 0.95.
 
 # 🔬 Challenges
 
-> 📝 **TODO:** Describe the main challenges of the project.
-
-Possible challenges:
-
 * ⚽ Small football objects
 * 🧍 Multiple players in a single frame
 * 👥 Overlapping players
-* 🌫️ Motion blur
 * 📷 Different camera perspectives
-* 🌱 Complex football-field backgrounds
-* ⚖️ Class imbalance
 * 🔍 Low-resolution football objects
-
----
-
-# 🚧 Limitations
-
-> 📝 **TODO:** Based on your results, describe the limitations.
-
-For example:
-
-* Football detection performance is lower than player detection.
-* Small objects are harder to detect.
-* The model was trained for only 10 epochs.
-* Detection performance may vary across different camera angles and lighting conditions.
 
 ---
 
@@ -568,43 +485,11 @@ The model achieved:
 
 The results show strong performance for **player detection**, while **football detection** remains a more challenging task due to the small size and visual characteristics of the ball.
 
-> 📝 **TODO:** Add a short personal conclusion about what you learned from the project.
-
 ---
 
 # 👨‍💻 Author
 
-**TODO — Your Name**
+**Ramin Allahverdizadeh**
 
-* GitHub: `TODO`
-* LinkedIn: `TODO`
-* Email: `TODO`
-
----
-
-# ⭐ Acknowledgements
-
-This project uses the **Ultralytics YOLO** framework for object detection.
-
-> 📝 **TODO:** Add dataset author/source and other references here.
-
----
-
-# 📜 License
-
-> 📝 **TODO:** Choose a license for the repository.
-
-Examples:
-
-```text
-MIT License
-Apache License 2.0
-GPL-3.0
-```
-
-If you do not want to specify a license yet:
-
-```text
-License: Not specified
-```
-
+* GitHub: Ramin0036
+* Email: Ramin.allahverdizadeh1998@gmail.com
