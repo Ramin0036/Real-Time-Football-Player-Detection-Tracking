@@ -84,6 +84,7 @@ The original dataset is available on Kaggle:
 
 ## 📁 Dataset Structure
 
+```text
 dataset/
 │
 ├── train/
@@ -99,6 +100,7 @@ dataset/
 │   └── labels/
 │
 └── data.yaml
+```
 
 ---
 
@@ -197,8 +199,6 @@ result = model.train(
 | Workers             | `0`          |
 | Pretrained Model    | `yolo26n.pt` |
 | Number of Classes   | `2`          |
-
-> 📝 **TODO:** Add other important training settings if you intentionally configured them.
 
 ---
 
