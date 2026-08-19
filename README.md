@@ -342,6 +342,7 @@ results = best_model.track(
     show=True,
     tracker="bytetrack.yaml"
 )
+```
 
 ### ⚙️ Tracking Configuration
 
