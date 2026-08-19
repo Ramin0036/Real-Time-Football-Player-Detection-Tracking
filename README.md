@@ -204,7 +204,7 @@ result = model.train(
 
 # 📉 Training Results
 
-
+<img width="2400" height="1200" alt="results" src="https://github.com/user-attachments/assets/8f97ea0e-1cdd-46f5-bbbb-896f09ab985e" />
 
 ### 📊 Training Curves
 
