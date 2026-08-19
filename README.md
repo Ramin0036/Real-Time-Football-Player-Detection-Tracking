@@ -305,6 +305,18 @@ The output video contains bounding boxes around the detected objects, along with
 | Inference Speed | **28 FPS** |
 | Detection Classes | **2** |
 
+## 🎥 Output Video
+
+The final output of the project is an annotated football video with real-time detection of players and the football.
+
+The model processes the video at approximately **28 FPS** and generates bounding boxes for the detected objects.
+
+### ▶️ Detection Demo
+
+> 📌 The following video demonstrates the real-time detection performance of the trained YOLO26 Nano model.
+
+**Output Video:** `TODO`
+
 ---
 
 # 🚀 Inference
