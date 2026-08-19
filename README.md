@@ -29,7 +29,7 @@ The model was trained on a custom football detection dataset and evaluated on a 
 * 🧠 YOLO26 Nano architecture
 * 📊 Model evaluation using Precision, Recall and mAP
 * 🚀 Image inference
-* 🎥 Video inference — **TODO: confirm whether implemented**
+* 🎥 Video inference with players detection
 
 ---
 
