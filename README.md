@@ -25,13 +25,14 @@ The model was trained on a custom football detection dataset and evaluated on a 
 
 ## ✨ Features
 
-* ⚽ Football detection
-* 🧍 Player detection
-* 🎯 Bounding-box based object detection
-* 🧠 YOLO26 Nano architecture
-* 📊 Model evaluation using Precision, Recall and mAP
-* 🚀 Image inference
-* 🎥 Video inference with players detection
+- ⚽ Football detection
+- 🧍 Player detection
+- 🎯 Bounding-box based object detection
+- 🧠 YOLO26 Nano architecture
+- 📊 Model evaluation using Precision, Recall and mAP
+- 🎥 Video-based object detection
+- ⚡ Real-time frame-by-frame inference
+- 🖥️ GPU-accelerated inference using CUDA
 
 ---
 
