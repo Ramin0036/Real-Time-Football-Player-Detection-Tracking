@@ -14,6 +14,35 @@ This project focuses on detecting **football players** and the **football** in f
 
 The model was trained on a custom football detection dataset and evaluated on a separate test set.
 
+---
+
+# 📁 Project Structure
+
+```text
+football_players_detection/
+│
+├── dataset/
+│   └── football_players_detection/
+│       ├── train/
+│       ├── val/
+│       ├── test/
+│       └── data.yaml
+│
+├── runs/
+│   └── detect/
+│       └── ...
+│
+├── weights/
+│   └── best.pt
+│
+├── notebooks/
+│   └── Footbal-Players-Detection-Yolo26n.ipynb
+│
+└── README.md
+```
+
+---
+
 ### 🎯 Detection Classes
 
 | Class      | Description            |
@@ -390,33 +419,6 @@ The system achieved an average processing speed of approximately **28 FPS**, ena
 | Detection Classes | **2** |
 | Inference Speed | **28 FPS** |
 | Task | Real-Time Detection & Tracking |
-
----
-
-# 📁 Project Structure
-
-```text
-football_players_detection/
-│
-├── dataset/
-│   └── football_players_detection/
-│       ├── train/
-│       ├── val/
-│       ├── test/
-│       └── data.yaml
-│
-├── runs/
-│   └── detect/
-│       └── ...
-│
-├── weights/
-│   └── best.pt
-│
-├── notebooks/
-│   └── Footbal-Players-Detection-Yolo26n.ipynb
-│
-└── README.md
-```
 
 ---
 
