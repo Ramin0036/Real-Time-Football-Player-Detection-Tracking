@@ -323,29 +323,25 @@ The model processes the video at approximately **28 FPS** and generates bounding
 
 # 🚀 Inference
 
-## Image Inference
+The trained **YOLO26 Nano** model was used for object detection and tracking on football videos.
 
-> 📝 **TODO:** Add your actual inference code here.
+The inference pipeline uses **ByteTrack** to maintain object identities across consecutive video frames, enabling consistent tracking of detected players and footballs.
+
+## 🎥 Video Detection & Tracking
+
+The trained model was applied to a football video using the Ultralytics tracking API.
 
 ```python
 from ultralytics import YOLO
 
-model = YOLO("path/to/best.pt")
+best_model = YOLO("path/to/best.pt")
 
-results = model.predict(
-    source="path/to/image.jpg",
-    imgsz=320,
-    conf=0.25
+results = best_model.track(
+    source="path/to/video.mp4",
+    save=True,
+    show=True,
+    tracker="bytetrack.yaml"
 )
-```
-
-### Run Prediction
-
-```bash
-python predict.py
-```
-
-> 📝 **TODO:** Replace this command with the actual command used in your project.
 
 ---
 
