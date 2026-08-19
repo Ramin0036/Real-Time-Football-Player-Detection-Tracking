@@ -661,5 +661,5 @@ The results show strong performance for **player detection**, while **football d
 
 **Ramin Allahverdizadeh**
 
-* GitHub: Ramin0036
+* GitHub: [Ramin0036](https://github.com/Ramin0036)
 * Email: Ramin.allahverdizadeh1998@gmail.com
