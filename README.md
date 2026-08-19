@@ -49,7 +49,7 @@ The project uses the **YOLO26 Nano (`yolo26n.pt`)** model as the base architectu
 | Batch Size  | `128`                                                                         |
 | Optimizer   | `Auto`                                                                        |
 | Workers     | `0`                                                                           |
-| Device      | `TODO: optionally describe as CUDA/GPU without mentioning specific hardware`  |
+| Device      | `CUDA GPU`
 | Ultralytics | `8.4.114`                                                                     |
 
 ---
