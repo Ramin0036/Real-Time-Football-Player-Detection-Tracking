@@ -1,6 +1,8 @@
 # ⚽ Real-Time Football Player Detection with YOLO26 Nano
 
-A computer vision project for **football player and football detection** using the **YOLO26 Nano** object detection model.
+A real-time computer vision project for detecting **football players** and the **football** in video streams using the **YOLO26 Nano** object detection model.
+
+The model is trained on a custom football detection dataset and used for frame-by-frame object detection on football videos.
 
 > 🚧 **Project Status:** `In Progress`
 
