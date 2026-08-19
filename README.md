@@ -438,12 +438,9 @@ PyTorch == 2.13.0+cu130
 
 ## 1. Clone the Repository
 
-```bash
-git clone TODO
-cd TODO
-```
+git clone https://github.com/Ramin0036/Football-Player-Detection-YOLOv8.git
 
-> 📝 **TODO:** Replace with your GitHub repository URL and repository name.
+cd Football-Player-Detection-YOLOv8
 
 ## 2. Install Dependencies
 
