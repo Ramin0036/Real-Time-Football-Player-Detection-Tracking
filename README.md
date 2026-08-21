@@ -4,6 +4,15 @@ A real-time computer vision project for detecting **football players** and the *
 
 The model is trained on a custom football detection dataset and used for frame-by-frame object detection on football videos.
 
+## ▶️ Detection Demo
+
+> 📌 The following video demonstrates the real-time detection performance of the trained YOLO26 Nano model.
+
+**Output Video:** 
+
+<img width="692" height="388" alt="video2 - Copy_02" src="https://github.com/user-attachments/assets/cec7a4c2-91d3-406e-b9a2-74b6765e0d86" />
+
+
 > 🚧 **Project Status:** `In Progress`
 
 ---
@@ -339,14 +348,6 @@ The output video contains bounding boxes around the detected objects, along with
 The final output of the project is an annotated football video with real-time detection of players and the football.
 
 The model processes the video at approximately **28 FPS** and generates bounding boxes for the detected objects.
-
-### ▶️ Detection Demo
-
-> 📌 The following video demonstrates the real-time detection performance of the trained YOLO26 Nano model.
-
-**Output Video:** 
-
-<img width="692" height="388" alt="video2 - Copy_02" src="https://github.com/user-attachments/assets/cec7a4c2-91d3-406e-b9a2-74b6765e0d86" />
 
 ---
 
